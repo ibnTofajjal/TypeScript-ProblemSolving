@@ -11,9 +11,14 @@ interface User {
  * How do we ensure that defaultUser is of type User
  * at THIS LINE - not further down in the code?
  */
-const defaultUser = {};
+const defaultUser = {
+  id: 1,
+  firstName: "Joynal",
+  lastName: "Bin Tofajjal",
+  isAdmin: true,
+};
 
-const getUserId = (user: User) => {
+const getUserId = (user: User): number => {
   return user.id;
 };
 
