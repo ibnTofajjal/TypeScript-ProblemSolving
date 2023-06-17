@@ -29,6 +29,6 @@ export const getDefaultUserAndPosts = (): unknown => {
   };
 };
 
-const userAndPosts = getDefaultUserAndPosts();
+const userAndPosts = getDefaultUserAndPosts() as User & { posts: Post[] };
 
 console.log(userAndPosts.posts[0]);
